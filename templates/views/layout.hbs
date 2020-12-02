@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+	<!-- Meta tags -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta
+		content="Clinify is one of India's largest student communities, that provides an all in one platform for students to learn new skills, network with peers, apply for internships and grow as an individual."
+		name="description" />
+	<meta property="og:image" content="/assets/img/favicon.png">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-touch-icon.png" />
+	<link rel="icon" type="img/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png" />
+	<link rel="icon" type="img/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png" />
+	<link rel="manifest" href="assets/img/favicons/site.webmanifest" />
+	<meta name="msapplication-TileColor" content="#da532c" />
+	<meta name="theme-color" content="#ffffff" />
+
+	<!-- Title -->
+	<title>Clinify</title>
+
+	<!-- CSS file -->
+	<link rel="stylesheet" href="./styles/css/main.min.css" />
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+	<!-- fonts -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+		rel="stylesheet" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179009367-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-179009367-1');
+	</script>
+
+</head>
+<body>
+	{{#if headerMain}}
+	{{> header}}
+	{{/if}}
+	{{#if headerSec}}
+	{{> headerSecondary}}
+	{{/if}}
+	
+     {{{body}}}
+	{{> footer}}
+
+	<script>
+		(function () {
+			var qs,
+				js,
+				q,
+				s,
+				d = document,
+				gi = d.getElementById,
+				ce = d.createElement,
+				gt = d.getElementsByTagName,
+				id = "typef_orm_share",
+				b = "https://embed.typeform.com/";
+			if (!gi.call(d, id)) {
+				js = ce.call(d, "script");
+				js.id = id;
+				js.src = b + "embed.js";
+				q = gt.call(d, "script")[0];
+				q.parentNode.insertBefore(js, q);
+			}
+		})();
+	</script>
+	
+
+	<script src="https://kit.fontawesome.com/d1ef0ad67d.js" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+	{{!-- -- Axios -- --}}
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     {{!-- -- Mustache -- --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+		
+
+	<script src="./js/index.js"></script> 
+</body>
+
+
+</html>
